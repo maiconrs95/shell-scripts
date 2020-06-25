@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo "Selecione uma opção:"
+echo "1 - Exibir data e hora do sistema"
+echo "2 - Exibir o resultado da divisão 10/2"
+echo "3 - Exibir uma mensagem"
+
+read opcao
+
+case $opcao in
+    1)
+        data=$(date +"%d-%m-%y %H:%M")
+        echo "$data"
+    ;;
+    2)
+        result=$((10/2))
+        echo "divisao de 10/2 = $result"
+    ;;
+    3)
+        echo "Qual seu nome?"
+        read name
+        echo "Bem-vindo ao shell script, $name"
+    ;;
+esac

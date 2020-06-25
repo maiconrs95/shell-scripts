@@ -1,0 +1,41 @@
+#!/bin/bash
+
+echo "Testando o loop for"
+
+for i in {10..0};
+  do
+    echo "$i"
+
+    if [ $i -eq 0 ]
+    then
+      echo -e "Última iteração\n\n"
+    fi
+done
+
+echo "Testando o comando seq. Cria uma sequência de 1 á 100 com intervalos de 5"
+
+for i in $(seq 1 5 100);
+  do
+    echo "$i"
+done
+
+echo -e "Testando a listagem de pastas"
+
+files=~/Documentos/projects/my-projects/*
+
+for file in $files
+do
+  echo $(basename $file)
+done
+
+echo -e "Testando o while"
+
+echo "Informe o que você quiser, -1 para sair"
+
+read dado;
+
+while [ $dado != "-1" ];
+    do
+        echo “Você digitou $dado”
+    read dado;
+done

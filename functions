@@ -1,0 +1,36 @@
+#!/bin/bash
+
+main() {
+    echo "Escolha uma opção:"
+    echo "1 - Printar nome"
+    echo "2 - Printar idade"
+
+    read opcao
+
+    case $opcao in
+    "1")
+        print_name
+    ;;
+    "2")
+        print_age
+    ;;
+    esac
+}
+
+print_name() {
+    echo "Qual seu nome?"
+
+    read name
+
+    echo "Seu nome é $name"
+}
+
+print_age() {
+    echo "Qual sua idade?"
+
+    read age
+
+    echo "Sua idade é $age"
+}
+
+main

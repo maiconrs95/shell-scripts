@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo $(date +"%d-%m-%y %H:%M")
+
+echo 'Who are you?'
+
+# Atribui a entrada de texto do console na variável
+read who
+
+echo "Hello, $who!"
+
+# Salva a saída do comando na variável
+DATE_NOW=$(date +"%d-%m-%y %H:%M")
+
+echo $DATE_NOW

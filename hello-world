@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# echo "Hello, world!"
+
+# STR="Hello, My First Var!"
+
+WHO="Maicon"
+
+echo "Hello, ${WHO}"
+
+games=('TLOU 2', 'God of War', 'Gost of Tushima')
+
+echo ${games[0]}
+echo ${games[2]}

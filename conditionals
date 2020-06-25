@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Qual sua idade?"
+
+read age
+
+if [ $age -gt 17 ]
+then
+    echo 'Maior de idade'
+else
+    echo 'Menor de idade'
+fi
