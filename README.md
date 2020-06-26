@@ -190,7 +190,7 @@ echo $DATE_NOW
 # Output: 25-06-20 16:50
 ```
 
-Observer que o valor de `DATE_NOW` é a saída do nosso comando em `$(COMAND)`.
+Observer que o valor de `DATE_NOW` é a saída do nosso comando em `$(COMANDO)`.
 
 ## Entrada do usuário
 
@@ -231,7 +231,7 @@ Támbém é possível usar `-z` para testar o vazio em uma sequência de caracte
 
 Em diversos momentos, um script precisa tomar uma ação baseado em alguma condição, um `if else`.
 
-A estrutuda condicional de um bash é `if`, `test ou [ CONDITIONAL ]`, `then`, `else`, e `fi` para finalizar o bloco.
+A estrutuda condicional de um bash é `if`, `test ou [ CONDICAO ]`, `then`, `else`, e `fi` para finalizar o bloco.
 
 Em `CONDICAO`, é possível utilizar os operadores que vimos na tabela da seção anterior:
 
@@ -267,7 +267,7 @@ else
 fi
 ```
 
-### Elif - eslse if?
+### Elif - else if?
 
 Em alguns casos é necessário testar mais de uma condição, todas correlacionadas. Para isso temos o `elif`:
 
@@ -287,7 +287,7 @@ then
 elif [ CONDICAO_N ];
 then
     AÇÕES_N
-Fi
+fi
 ```
 Para ficar mais claro, vamos usar em um exemplo prático.
 
