@@ -2,7 +2,7 @@
 
 São scripts interpretados por algum programa [Shell](https://pt.wikipedia.org/wiki/Shell_script), sendo Shell uma interface de linha de comando (CLI) que permite o usuário acessar serviços do sistema operacional.
 
-Nos exemplos desse artigo vamos estar utilizando o [bash](https://pt.wikipedia.org/wiki/Bash) como interpretador.
+Nos exemplos desse artigo vamos utilizar o [bash](https://pt.wikipedia.org/wiki/Bash) como interpretador.
 
 O Bash está disponível por padrão nos sistemas operacionais Unix-like como Linux e macOS.
 
@@ -50,7 +50,7 @@ Pronto, temos nosso primeiro shell script.
 
 ### Scripts executáveis
 
-Aprendemos a executar um script prefixado de bash, que é o responsável por interpretar os comandos dentro do nosso arquivo, mas se tetarmos simplesmente executar o arquivos pelo nome, ele não será executado.
+Aprendemos a executar um script prefixado de bash, que é o responsável por interpretar os comandos dentro do nosso arquivo, mas se tentarmos simplesmente executar o arquivos pelo nome, ele não será executado.
 
 >  `./` é usado para indicar que arquivo está no diretório atual
 
@@ -137,7 +137,7 @@ As strings entre aspas duplas também são importantes para uso com variáveis, 
 
 Podemos usar variáveis ​​como em qualquer linguagem de programação. Não há tipos de dados. Uma variável no bash pode conter um número, um caractere ou uma sequência de caracteres.
 
-Também não é necessário declarar a variável, apenas atribuir um valor irá clia-la:
+Também não é necessário declarar a variável, apenas atribuir um valor irá cria-la:
 
 ```shell
 STR="Hello, My First Var!"
@@ -163,7 +163,7 @@ Essa sintaxe é necessária para qualquer coisa mais complexa que  possamos faze
 
 ## Matrizes
 
-Uma matriz no bash é definida entre parênteses e não há virgulas entre seus items:
+Uma matriz no bash é definida entre parênteses e não há virgulas entre seus itens:
 
 ```shell
 games=('TLOU 2', 'God of War', 'Gost of Tushima')
@@ -231,7 +231,7 @@ Támbém é possível usar `-z` para testar o vazio em uma sequência de caracte
 
 Em diversos momentos, um script precisa tomar uma ação baseado em alguma condição, um `if else`.
 
-A estrutuda condicional de um bash é `if`, `test ou [ CONDICAO ]`, `then`, `else`, e `fi` para finalizar o bloco.
+A estrutura condicional de um bash é `if`, `test ou [ CONDICAO ]`, `then`, `else`, e `fi` para finalizar o bloco.
 
 Em `CONDICAO`, é possível utilizar os operadores que vimos na tabela da seção anterior:
 
@@ -416,7 +416,7 @@ while [ $dado != "-1" ];
 done
 ```
 
-O bloco `do` será executado equanto o valor imputado pelo usuário for diferente de `-1`.
+O bloco `do` será executado enquanto o valor imputado pelo usuário for diferente de `-1`.
 
 ## Funções
 
