@@ -50,7 +50,7 @@ Pronto, temos nosso primeiro shell script.
 
 ### Scripts executáveis
 
-Aprendemos a executar um script prefixado de bash, que é o responsável por interpretar os comandos dentro do nosso arquivo, mas se tentarmos simplesmente executar o arquivos pelo nome, ele não será executado.
+Aprendemos a executar um script prefixado de bash, que é o responsável por interpretar os comandos dentro do nosso arquivo, mas se tentarmos simplesmente executar o arquivo pelo nome, ele não será executado.
 
 >  `./` é usado para indicar que arquivo está no diretório atual
 
